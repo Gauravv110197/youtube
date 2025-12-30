@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* TOP BAR */
+.topbar {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background: #0f0f0f;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.search {
+    display: flex;
+    width: 40%;
+}
+
+.search input {
+    flex: 1;
+    padding: 8px 12px;
+    background: #121212;
+    border: 1px solid #303030;
+    color: white;
+    border-radius: 20px 0 0 20px;
+}
+
+.search button {
+    padding: 8px 16px;
+    border: 1px solid #303030;
+    background: #222;
+    color: white;
+    border-radius: 0 20px 20px 0;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    padding: 10px;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.sidebar a:hover,
+.sidebar .active {
+    background: #272727;
+}
+
+.sidebar span {
+    margin-left: 12px;
+}
+
+.sidebar hr {
+    border: none;
+    height: 1px;
+    background: #303030;
+    margin: 10px 0;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 15px;
+}
+
+/* CHIPS */
+.chips {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+
+.chip {
+    padding: 6px 14px;
+    background: #272727;
+    border-radius: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.chip.active {
+    background: white;
+    color: black;
+}
+
+/* VIDEOS */
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.info {
+    display: flex;
+    margin-top: 10px;
+}
+
+.info .avatar {
+    background: #444;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.info h4 {
+    font-size: 15px;
+}
+
+.info p {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.info span {
+    font-size: 12px;
+    color: #777;
+}
