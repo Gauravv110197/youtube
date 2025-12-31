@@ -1,36 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>YouTube UI</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="header-left">
-            <i class="material-icons">menu</i>
-            <img src="https://t3.ftcdn.net/jpg/06/34/31/96/360_F_634319630_txtgmPLEEQ8o4zaxec2WKrLWUBqdBBQn.jpg" alt="YouTube Logo" class="logo">
-        </div>
-    <div class="header-search">
-        <form action="">
-            <input type="text" placeholder="Search">
-            <button>
-                <i class="material-icons">search</i>
-            </button>
-        </form>
-        <div class="search-mic">
-            <i class="material-icons">mic</i>
-        </div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-left">
+    ☰
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+  </div>
+
+  <div class="header-center">
+    <input type="text" placeholder="Search">
+    <button>🔍</button>
+    🎤
+  </div>
+
+  <div class="header-right">
+    ➕ 🔔
+    <div class="avatar">R</div>
+  </div>
+</header>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <a class="active">🏠 Home</a>
+  <a>🎬 Shorts</a>
+  <a>📺 Subscriptions</a>
+
+  <hr>
+
+  <a>📚 Library</a>
+  <a>🕘 History</a>
+  <a>⏳ Watch later</a>
+  <a>👍 Liked videos</a>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+<!-- CATEGORY BAR -->
+<div class="chips">
+  <span class="chip active">All</span>
+  <span class="chip">Web Development</span>
+  <span class="chip">Gaming</span>
+  <span class="chip">Music</span>
+  <span class="chip">Data Structures</span>
+  <span class="chip">Job Interviews</span>
+</div>
+
+<!-- VIDEO GRID -->
+<section class="grid">
+
+<!-- CARD -->
+<div class="card">
+  <img src="https://picsum.photos/640/360?1">
+  <div class="meta">
+    <div class="channel">N</div>
+    <div>
+      <h4>How to Build a YouTube UI Using HTML & CSS</h4>
+      <p>NextEra Coders</p>
+      <span>2.5K views • 1 year ago</span>
     </div>
-    <div class="header-icons">
-        <i class="material-icons">videocall</i>
-        <i class="material-icons">notifications</i>
-        <i class="material-icons">account_circle</i>
-        
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://picsum.photos/640/360?2">
+  <div class="meta">
+    <div class="channel">H</div>
+    <div>
+      <h4>Easy Chicken Momos Recipe 🔥</h4>
+      <p>Chef Harish Ji</p>
+      <span>4.9K views • 2 hours ago</span>
     </div>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://picsum.photos/640/360?3">
+  <div class="meta">
+    <div class="channel">Y</div>
+    <div>
+      <h4>YouTube Rewind 2025 | A Year to Remember</h4>
+      <p>8bit PitajiPlayz</p>
+      <span>1.4K views • 1 hour ago</span>
     </div>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://picsum.photos/640/360?4">
+  <div class="meta">
+    <div class="channel">C</div>
+    <div>
+      <h4>CSS Grid Masterclass</h4>
+      <p>Code Lab</p>
+      <span>90K views • 5 days ago</span>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://picsum.photos/640/360?5">
+  <div class="meta">
+    <div class="channel">J</div>
+    <div>
+      <h4>JavaScript Complete Course</h4>
+      <p>JS World</p>
+      <span>150K views • 1 week ago</span>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://picsum.photos/640/360?6">
+  <div class="meta">
+    <div class="channel">D</div>
+    <div>
+      <h4>DSA Roadmap 2025</h4>
+      <p>DS Master</p>
+      <span>60K views • 3 days ago</span>
+    </div>
+  </div>
+</div>
+
+</section>
+</main>
+</div>
+
 </body>
 </html>
